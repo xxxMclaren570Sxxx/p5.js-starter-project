@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js First project</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 1;
+      background-color: rgba(245, 10, 10, 0.5);
+    }
+  </style>
+  <script src="p5.js"></script>
+  <script src="p5.dom.js"></script>
+</head>
+
+<body>
+
+  <script>
+    //---Varibles---\\
+    var x = 150;
+
+    //---SetUp---\\
+    function setup() {
+      createCanvas(1850, 925.5)
+    }
+    //---Draw---\\
+    function draw() {
+      background(51);
+
+      //---Transparent---\\
+      fill(255, 10, 40, 150);
+      ellipse(50, 50, 50, 50);
+
+      //---Moves---\\
+      fill(255, 0, 0);
+      rectMode(CENTER)
+      rect(x, 50, 50, 50)
+      //Uncomment the line below for the rect to move\\
+      //x = x + 1;
+
+      //---Rounded Corners For A Rectangle---\\
+      fill(0,255,0,50);
+      rect(250,50,30,30,10);
+
+      //---Follows The Mouse On the X-axis And Y-axis---\\
+      fill(0,0,230,100);
+      //Change 350 With mouseX and the first 50 mouseY
+      ellipse(350,50,50,50);
+
+    }
+  </script>
+  <main>
+  </main>
+</body>
+
+</html>
